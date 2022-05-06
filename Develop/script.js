@@ -20,6 +20,13 @@ var generatePassword=function(){
     var lowerCasePrompt = window.prompt("Do you want your password include lowercase letters? Yes or No.");
     if (lowerCasePrompt==="yes" || lowerCasePrompt==="YES"){
       randomString= randomString + lowerCase;
+      
+    }
+
+    //uppercase
+    var upperCasePrompt = window.prompt ("Do you want your password include uppercase letters? Yes or No");
+    if (upperCasePrompt === "yes" || lowerCasePrompt === "YES"){
+      randomString = randomString + upperCase;
       console.log(randomString);
     }
   }
