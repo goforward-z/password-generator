@@ -12,7 +12,7 @@ var PasswordString ="";
 var generatePassword=function(){
 
   //password length must between 8-128 characters
-  var passwordLength = parseInt(window.prompt("How Many Characters Do You want For Your Password? Pwassword Must Be in Between 8-128.")); 
+  var passwordLength = parseInt(window.prompt("How Many Characters Do You want For Your Password? Password Must Be in Between 8-128.")); 
   if (passwordLength >=8 && passwordLength <= 128){
     //choose lowerCase, UpperCase, number,special character
     
