@@ -5,7 +5,7 @@ var specialCharacter = "!@#$%^&*()+[]{}`~ ";
 var number = " 0123456789 ";
 
 var randomString ="";
-var PwasswordString ="";
+var PasswordString ="";
 
 
 
@@ -43,6 +43,23 @@ var generatePassword=function(){
       randomString = randomString + number;
       console.log(randomString);
     }
+  }
+  else{
+    window.alert("Password Invalid, Please try again");
+  };
+
+  var characterTypes = lowerCasePrompt + upperCasePrompt + specialCharacterPrompt + numberPrompt
+
+  if(! characterTypes){
+    return;
+  } 
+  else{
+
+    for(var i = 0; i < passwordLength; i++){
+      PasswordString += randomString.charAt(Math.floor(Math.random()* randomString.length));
+    }
+    var finalPassword = PasswordString;
+    return finalPassword;
   }
   
 };
