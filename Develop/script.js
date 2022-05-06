@@ -27,21 +27,20 @@ var generatePassword=function(){
     var upperCasePrompt = window.prompt ("Do you want your password include uppercase letters? Yes or No");
     if (upperCasePrompt === "yes" || lowerCasePrompt === "YES"){
       randomString = randomString + upperCase;
-      console.log(randomString);
     }
 
     //special characters
     var specialCharacterPrompt = window.prompt("Do you want your password include special characters? Yes or No");
     if(specialCharacterPrompt ==="yes"|| specialCharacterPrompt ==="YES"){
       randomString = randomString +specialCharacter;
-      console.log(randomString);
+
     }
 
     //numbers
     var numberPrompt = window.prompt("Do you want your password include numbers? Yes or No");
     if(numberPrompt === "yes" || numberPrompt === "YES"){
       randomString = randomString + number;
-      console.log(randomString);
+      
     }
   }
   else{
@@ -64,14 +63,6 @@ var generatePassword=function(){
   
 };
 
-
-//use the answers to generator a list of possible character
-
-//use the list of possible characters to generate a random password
-
-//validate that the password meets the requrements
-
-//write the password on the screen
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
