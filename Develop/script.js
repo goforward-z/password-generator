@@ -36,6 +36,13 @@ var generatePassword=function(){
       randomString = randomString +specialCharacter;
       console.log(randomString);
     }
+
+    //numbers
+    var numberPrompt = window.prompt("Do you want your password include numbers? Yes or No");
+    if(numberPrompt === "yes" || numberPrompt === "YES"){
+      randomString = randomString + number;
+      console.log(randomString);
+    }
   }
   
 };
