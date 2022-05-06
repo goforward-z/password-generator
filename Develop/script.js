@@ -29,6 +29,13 @@ var generatePassword=function(){
       randomString = randomString + upperCase;
       console.log(randomString);
     }
+
+    //special characters
+    var specialCharacterPrompt = window.prompt("Do you want your password include special characters? Yes or No");
+    if(specialCharacterPrompt ==="yes"|| specialCharacterPrompt ==="YES"){
+      randomString = randomString +specialCharacter;
+      console.log(randomString);
+    }
   }
   
 };
